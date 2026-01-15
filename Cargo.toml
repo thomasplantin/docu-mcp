@@ -1,6 +1,13 @@
 [package]
 name = "docu-mcp"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+anyhow = "1.0"
+extractous = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "5.0"
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+async-trait = "0.1"
